@@ -1,0 +1,15 @@
+app:
+  name: jrdrdn-poi-map-app
+  namespace: jrdrdn
+  cluster: .apps.rosa-pzz6v.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-demo/jrdrdn-frontend
+  org: rhdh23-demo
+  name: jrdrdn-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: jrdrdn/poi-map-app
+  tag: latest
